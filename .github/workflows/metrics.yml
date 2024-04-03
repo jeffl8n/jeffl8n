@@ -101,7 +101,7 @@ jobs:
 
           # Options
           template: classic
-          base: header, activity, community, repositories, metadata
+          base: header, activity, metadata
           user: jel3-sf
           config_timezone: ${{ secrets.USER_TIMEZONE }}
 
