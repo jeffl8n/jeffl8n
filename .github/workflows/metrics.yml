@@ -42,28 +42,6 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-  habits-jeffl8n:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-
-          filename: jeffl8n-habits.svg
-
-          # Options
-          template: classic
-          base: ""
-          user: jeffl8n
-          config_timezone: ${{ secrets.USER_TIMEZONE }}
-          plugin_habits: yes
-          plugin_habits_from: 200 
-          plugin_habits_days: 14
-          plugin_habits_charts: yes
-          plugin_habits_trim: yes
-
   achievements-jeffl8n:
     runs-on: ubuntu-latest
     permissions:
@@ -123,28 +101,6 @@ jobs:
           config_timezone: ${{ secrets.USER_TIMEZONE }}
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-
-  habits-jel3-sf:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-
-          filename: jel3-sf-habits.svg
-
-          # Options
-          template: classic
-          base: ""
-          user: jel3-sf
-          config_timezone: ${{ secrets.USER_TIMEZONE }}
-          plugin_habits: yes
-          plugin_habits_from: 200 
-          plugin_habits_days: 14
-          plugin_habits_charts: yes
-          plugin_habits_trim: yes
 
   achievements-jel3-sf:
     runs-on: ubuntu-latest
