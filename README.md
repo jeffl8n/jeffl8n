@@ -20,7 +20,7 @@
   <td style="border-left: 1px solid white; width: 49%">
     <a href="https://github.com/jel3-sf"><img src="./jel3-sf-activity.svg" /> </a>
     <a href="https://github.com/jel3-sf"><img src="./jel3-sf-repositories.svg" /> </a>
-    <a href="https://github.com/jeffl8n"><img src="./jel3-sf-languages.svg" /></a>
+    <a href="https://github.com/jel3-sf"><img src="./jel3-sf-languages.svg" /></a>
   </td>
 </tr>
 <tr>
