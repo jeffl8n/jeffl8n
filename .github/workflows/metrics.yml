@@ -92,13 +92,13 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.SF_METRICS_TOKEN }}
 
           filename: jel3-sf-header.svg
 
           # Options
           template: classic
-          base: header, activity, metadata
+          base: header, activity, community, repositories, metadata
           user: jel3-sf
           config_timezone: ${{ secrets.USER_TIMEZONE }}
 
@@ -109,7 +109,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.SF_METRICS_TOKEN }}
 
           filename: jel3-sf-iso_calender.svg
 
@@ -128,7 +128,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.SF_METRICS_TOKEN }}
 
           filename: jel3-sf-achievements.svg
 
@@ -150,7 +150,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.SF_METRICS_TOKEN }}
 
           filename: jel3-sf-languages.svg
 
