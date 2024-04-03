@@ -136,7 +136,8 @@ jobs:
           config_timezone: ${{ secrets.USER_TIMEZONE }}
           plugin_habits: yes
           plugin_habits_charts: yes
-          plugin_habits_trim: yes
+          plugin_habits_from: 1000
+          plugin_habits_days: 30
 
           
   header-jel3-sf:
@@ -272,4 +273,5 @@ jobs:
           repositories_affiliations: owner, collaborator
           plugin_habits: yes
           plugin_habits_charts: yes
-          plugin_habits_trim: yes
+          plugin_habits_from: 1000
+          plugin_habits_days: 30
