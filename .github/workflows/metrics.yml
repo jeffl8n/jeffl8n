@@ -22,9 +22,9 @@ jobs:
           template: classic
           base: header
           user: jeffl8n
-          config_timezone: ${{ env.USER_TIMEZONE }}
+          config_timezone: ${{ vars.USER_TIMEZONE }}
           repositories_skipped: |
-              ${{ env.REPOS_SKIPPED }}
+            ${{ vars.REPOS_SKIPPED }}
 
   activity-jeffl8n:
     runs-on: ubuntu-latest
@@ -41,9 +41,9 @@ jobs:
           template: classic
           base: activity
           user: jeffl8n
-          config_timezone: ${{ env.USER_TIMEZONE }}
+          config_timezone: ${{ vars.USER_TIMEZONE }}
           repositories_skipped: |
-              ${{ env.REPOS_SKIPPED }}
+            ${{ vars.REPOS_SKIPPED }}
 
   repositories-jeffl8n:
     runs-on: ubuntu-latest
@@ -60,9 +60,9 @@ jobs:
           template: classic
           base: repositories
           user: jeffl8n
-          config_timezone: ${{ env.USER_TIMEZONE }}
+          config_timezone: ${{ vars.USER_TIMEZONE }}
           repositories_skipped: |
-              ${{ env.REPOS_SKIPPED }}
+            ${{ vars.REPOS_SKIPPED }}
 
   iso_calender-jeffl8n:
     runs-on: ubuntu-latest
@@ -79,9 +79,9 @@ jobs:
           template: classic
           base: ""
           user: jeffl8n
-          config_timezone: ${{ env.USER_TIMEZONE }}
+          config_timezone: ${{ vars.USER_TIMEZONE }}
           repositories_skipped: |
-              ${{ env.REPOS_SKIPPED }}
+            ${{ vars.REPOS_SKIPPED }}
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
@@ -100,9 +100,9 @@ jobs:
           template: classic
           base: achievements
           user: jeffl8n
-          config_timezone: ${{ env.USER_TIMEZONE }}
+          config_timezone: ${{ vars.USER_TIMEZONE }}
           repositories_skipped: |
-              ${{ env.REPOS_SKIPPED }}
+            ${{ vars.REPOS_SKIPPED }}
           plugin_achievements: yes
           plugin_achievements_threshold: B
           plugin_achievements_secrets: yes
@@ -124,9 +124,9 @@ jobs:
           template: classic
           base: ""
           user: jeffl8n
-          config_timezone: ${{ env.USER_TIMEZONE }}
+          config_timezone: ${{ vars.USER_TIMEZONE }}
           repositories_skipped: |
-              ${{ env.REPOS_SKIPPED }}
+            ${{ vars.REPOS_SKIPPED }}
           plugin_languages: yes
           plugin_languages_details: bytes-size, percentage
 
@@ -145,9 +145,9 @@ jobs:
           template: classic
           base: ""
           user: jeffl8n
-          config_timezone: ${{ env.USER_TIMEZONE }}
+          config_timezone: ${{ vars.USER_TIMEZONE }}
           repositories_skipped: |
-              ${{ env.REPOS_SKIPPED }}
+            ${{ vars.REPOS_SKIPPED }}
           plugin_habits: yes
           plugin_habits_charts: yes
           plugin_habits_from: 1000
@@ -169,9 +169,9 @@ jobs:
           template: classic
           base: header
           user: jel3-sf
-          config_timezone: ${{ env.USER_TIMEZONE }}
+          config_timezone: ${{ vars.USER_TIMEZONE }}
           repositories_skipped: |
-              ${{ env.REPOS_SKIPPED }}
+            ${{ vars.REPOS_SKIPPED }}
 
   activity-jel3-sf:
     runs-on: ubuntu-latest
@@ -188,9 +188,9 @@ jobs:
           template: classic
           base: activity
           user: jel3-sf
-          config_timezone: ${{ env.USER_TIMEZONE }}
+          config_timezone: ${{ vars.USER_TIMEZONE }}
           repositories_skipped: |
-              ${{ env.REPOS_SKIPPED }}
+            ${{ vars.REPOS_SKIPPED }}
           repositories_affiliations: owner, collaborator
 
   repositories-jel3-sf:
@@ -208,9 +208,9 @@ jobs:
           template: classic
           base: repositories
           user: jel3-sf
-          config_timezone: ${{ env.USER_TIMEZONE }}
+          config_timezone: ${{ vars.USER_TIMEZONE }}
           repositories_skipped: |
-              ${{ env.REPOS_SKIPPED }}
+            ${{ vars.REPOS_SKIPPED }}
           repositories_affiliations: owner, collaborator
 
   iso_calender-jel3-sf:
@@ -228,9 +228,9 @@ jobs:
           template: classic
           base: ""
           user: jel3-sf
-          config_timezone: ${{ env.USER_TIMEZONE }}
+          config_timezone: ${{ vars.USER_TIMEZONE }}
           repositories_skipped: |
-              ${{ env.REPOS_SKIPPED }}
+            ${{ vars.REPOS_SKIPPED }}
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
@@ -249,9 +249,9 @@ jobs:
           template: classic
           base: achievements
           user: jel3-sf
-          config_timezone: ${{ env.USER_TIMEZONE }}
+          config_timezone: ${{ vars.USER_TIMEZONE }}
           repositories_skipped: |
-              ${{ env.REPOS_SKIPPED }}
+            ${{ vars.REPOS_SKIPPED }}
           plugin_achievements: yes
           plugin_achievements_threshold: B
           plugin_achievements_secrets: yes
@@ -273,9 +273,9 @@ jobs:
           template: classic
           base: ""
           user: jel3-sf
-          config_timezone: ${{ env.USER_TIMEZONE }}
+          config_timezone: ${{ vars.USER_TIMEZONE }}
           repositories_skipped: |
-              ${{ env.REPOS_SKIPPED }}
+            ${{ vars.REPOS_SKIPPED }}
           repositories_affiliations: owner, collaborator
           plugin_languages: yes
           plugin_languages_details: bytes-size, percentage
@@ -295,9 +295,9 @@ jobs:
           template: classic
           base: ""
           user: jel3-sf
-          config_timezone: ${{ env.USER_TIMEZONE }}
+          config_timezone: ${{ vars.USER_TIMEZONE }}
           repositories_skipped: |
-              ${{ env.REPOS_SKIPPED }}
+            ${{ vars.REPOS_SKIPPED }}
           repositories_affiliations: owner, collaborator
           plugin_habits: yes
           plugin_habits_charts: yes
